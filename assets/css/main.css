@@ -1,0 +1,46 @@
+*{
+font-family: Helvetica,"sans-serif";
+}
+
+body{
+text-align: center;
+}
+
+h1 {
+text-align: center;
+}
+
+section{
+display: inline-block;
+margin: 20px auto;
+}
+
+form{
+display: inline-block;
+margin: 20px auto;
+}
+
+label{
+margin: 10px;
+padding: 2px;
+}
+
+textarea{
+margin: 10px;
+padding: 5px;
+height: 6em;
+width: 400px;
+}
+
+#enviar{
+color: white;
+border: none;
+background-color: #F9A91A;
+border-radius: 5px;
+padding: 5px 10px;
+margin: 10px;
+}
+
+footer{
+position: relative;
+}
