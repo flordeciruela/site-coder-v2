@@ -1,46 +1,124 @@
 *{
-font-family: Helvetica,"sans-serif";
+font-family: "Open Sans", sans-serif;
 }
 
 body{
 text-align: center;
+background: #333333;
 }
 
-h1 {
+#section-up{
+background: white;
+margin: -8px;
+}
+
+img{
+width: 20%;
+height: 20%;
+}
+
+#title{
+display: block;
 text-align: center;
+padding: 0;
+margin: 0px 0 10px 0px;
+color: #F9A91A;
+font-weight: 550;
 }
 
-section{
+#posts{
 display: inline-block;
+text-align: center;
 margin: 20px auto;
+width: 395px;
+max-width: 395px;
+min-height: 220px;
+padding-left: 5px;
+border-radius: 3px;
+text-align: center;
 }
 
 form{
 display: inline-block;
-margin: 20px auto;
+margin: 0px auto;
+/*border: 1px solid #F9A91A;*/
+width: 395px;
+max-width: 395px;
+padding: 10px;
 }
 
-label{
-margin: 10px;
+#nombre{
+display: block;
+margin: 0 0 10px 0;
 padding: 2px;
+border-radius: 3px;
 }
+
 
 textarea{
-margin: 10px;
+width: 385px;
 padding: 5px;
-height: 6em;
-width: 400px;
+height: 3em;
+margin: 0 0 5px 0;
+border-radius: 3px;
 }
 
 #enviar{
 color: white;
 border: none;
+float: right;
 background-color: #F9A91A;
 border-radius: 5px;
 padding: 5px 10px;
-margin: 10px;
+margin: 0 0 0px 0;
+}
+
+div{
+width: 385px;
+max-width: 385px;
+min-height: 3em;
+display: inline-block;
+text-align: center;
+word-wrap: break-word;
+padding: 0px;
+}
+
+p{
+float: left;
+margin: 0px;
+color: #F9A91A;
+font-weight: 550;
+}
+
+#idea{
+width: 7%;
+height: 7%;
+float: left;
+margin: 10px 5px;
+}
+
+span{
+color: #F9A91A;
+font-family: "Open Sans", sans-serif;
+font-size: 17px;
+}
+
+.print-text{
+  width: 385px;
+  max-width: 385px;
+  min-height: 1em;
+  padding: 0px;
+  float: left;
+  text-align: left;
+  color: white;
+  border-bottom: 0.05em solid #F9A91A;
+  /*word-wrap: break-word;*/
 }
 
 footer{
+font-size: 12px;
 position: relative;
+text-align: right;
+color: #F9A91A;
+margin: 20px 10px 0px 0px;
 }

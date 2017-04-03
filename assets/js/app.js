@@ -1,28 +1,36 @@
-var text = document.getElementById("text").value;
+
 var posts = document.getElementById("posts");
 var arrPost = new Array();
 
 document.getElementById("enviar").addEventListener('click',function(event) {
 	event.preventDefault();
+	var text = document.getElementById("text").value;
+	var nombre = document.getElementById("nombre").value;
+	var firstNode = document.getElementById("comments-title");
 
-	arrPost.push(new Post(text));
-	arrPost.appendChild(arrPost[arrPost.length -1].crearPost());
+	arrPost.push(new Post(nombre, text));
+	posts.insertBefore(arrPost[arrPost.length -1].crearPost(),firstNode.nextSibling);//Insertar ultimo posts antes del segundo elemento.
+	document.getElementById("coment-box").reset();
 
 });
 
-function Post(text){
+function Post(nombre, text){
 
-		this.text = text;
-		this.crearPost = function(){
+	this.text = text;
+	this.nombre = nombre;
+	this.crearPost = function(){
 
-					                       var nuevoDiv = document.createElement('div');
-					                       var p = document.createElement('p');
+															var divPost = document.createElement('div');
+															var p = document.createElement('p');
+															var divTexto = document.createElement('div');
+															divTexto.setAttribute("class","print-text");
 
-																 p.innerHTML += this.text;
-					                       //nuevaTextarea.readOnly = "true";
+															p.appendChild(document.createTextNode(this.nombre));
+															divTexto.appendChild(document.createTextNode(this.text));
 
-					                       nuevoDiv.appendChild(p);
-					                       return nuevoDiv;
-					                       };
+															divPost.appendChild(p);
+															divPost.appendChild(divTexto);
+														 	return divPost;
+					                    };
 
    }

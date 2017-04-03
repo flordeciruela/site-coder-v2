@@ -4,20 +4,24 @@
 		<meta charset="utf-8">
 		<title>Site coder</title>
 		<link rel="stylesheet" href="assets/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Site coder</h1>
+		<section id="section-up">
+			<header>
+				<img src="assets/images/logo.svg" alt="logo">
+			</header>
+			<span id="title">¡Welcome to site coder!</span>
 
-		<form id="coment-box" class="center-section">
-			<label for="nombre"></label><input type="text" name="nombre" value="" id="nombre" placeholder="Nombre">
-			<br>
-			<textarea name="text" id="text" placeholder="Escribe un comentario.."></textarea>
-			<br>
-			<input type="button" name="enviar" value="Enviar" id="enviar">
-		</form>
+			<form id="coment-box" class="center-section">
+				<label for="nombre"></label><input type="text" name="nombre" value="" id="nombre" placeholder="Name">
+				<textarea name="text" id="text" placeholder="Write your comment here."></textarea>
+				<input type="button" name="enviar" value="Post comment" id="enviar">
+			</form>
+	  </section>
 
 		<section id="posts">
-
+			<span id="comments-title">Comments:</span>
 		</section>
 		<footer>© Laboratoria 2017</footer>
 		<script src="assets/js/app.js" charset="utf-8"></script>
